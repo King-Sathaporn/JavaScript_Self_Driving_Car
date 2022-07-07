@@ -79,7 +79,7 @@ function animate(time){
     bestCar.draw(carCtx, "blue", true);
 
     carCtx.restore();
-    networkCtx.lineDashOffset = -time/50;
+    networkCtx.lineDashOffset = time;
     Visualizer.drawNetwork(networkCtx,bestCar.brain);
     requestAnimationFrame(animate);
 }
